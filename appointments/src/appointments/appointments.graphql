@@ -1,0 +1,18 @@
+type Appointment {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateAppointmentInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+type Query {
+  appointments: [Appointment]!
+  appointment(id: Int!): Appointment
+}
+
+type Mutation {
+  createAppointment(createAppointmentInput: CreateAppointmentInput!): Appointment!
+}
